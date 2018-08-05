@@ -1,0 +1,69 @@
+
+import os, time
+import urllib2
+
+def main():
+     os.system('reset')
+def fbbrute():
+     f = open('fbbrute.py','w')
+     link = 'https://gist.githubusercontent.com/Ranginang67/43f02db69746daff343ac7f9a5d51646/raw/c66bcb2390169fbe4666e8cead3c0c1cc3f5f3ed/gistfile1.txt'
+     open = urllib2.urlopen(link)
+     data = open.read()
+     KONTOL = '%s' %data
+     f.write(KONTOL)
+     f.close()
+     os.system('mv fbbrute.py $HOME')
+     print "Done..."
+     print "the fbbrute script is in the home path"
+def fbook():
+     os.system('git clone https://github.com/Ranginang67/Fbook.git && mv Fbook $HOME')
+     print "Done..."
+def mbf():
+     os.system('git clone https://github.com/pirmansx/mbf && mv mbf $HOME')
+     print "Done..."
+def botfacebook():
+     os.system('git clone https://github.com/Senitopeng/BotFbBangDjon.git && mv BotFbBangDjon $HOME')
+     print "Done..."
+def autoreport():
+     os.system('git clone https://github.com/gshofficialgithubindonesia/autoreport-fb && mv autoreport-fb $HOME')
+     print "Done..."
+
+     
+# ASW LOE :v
+
+banner = '''\a
+  .___         .        .  
+  [__  _. _. _ |_  _  _ ;_/
+  |   (_](_.(/,[_)(_)(_)| \
+
+  
+  
+    1 - fbbrute (bruteforce)
+    2 - Fbook (bruteforce)
+    3 - MBF
+    4 - Bot fb By BangDjon
+    5 - auto report FB
+    
+'''
+main()
+print
+print
+print
+print
+print
+print banner
+fb = raw_input('|+| Bissmillah : ')
+if fb == '1':
+      fbbrute()
+elif fb == '2':
+      fbook()
+elif fb == '3':
+      mbf()
+elif fb == '4':
+      botfacebook()
+elif fb == '5':
+      autoreport()
+else:
+   print "\a\n[x] Wrong input..."
+   time.sleep(0.8)
+   os.system('python2 .FB')
